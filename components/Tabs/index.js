@@ -20,7 +20,7 @@ function topics (lambdatopics) {
 axios
   .get("https://lambda-times-backend.herokuapp.com/topics")
   .then(response => {
-    console.log(response);
+    // console.log(response);
         const topicsData = topics(response.data);
         topicsEntry.appendChild(topicsData);
   })
